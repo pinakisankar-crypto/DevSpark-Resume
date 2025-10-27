@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* initially added this shorthand style and theme layer, later we'll add more accordingly */
+
+@layer utilities {
+  .flex-between {
+    @apply flex justify-between;
+  }
+
+  .flex-around {
+    @apply flex justify-around;
+  }
+
+  .flex-evenly {
+    @apply flex justify-evenly;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .animated {
+    @apply transition-all ease-in-out duration-300;
+  }
+
+  .absolute-center {
+    @apply absolute top-[50%] left-[50%] translate-[-50% -50%];
+  }
+}
+
+/* Color Themes */
+
+@layer theme {
+  :root {
+    --primary-text: #fd853a;
+    --primary-bg: #FEB273;
+    --secondary-bg: #F2F4F7;
+    --secondary-text: #98A2B3;
+    --primary-black: #171717;
+    --secondary-black: #272727;
+  }
+}
+
