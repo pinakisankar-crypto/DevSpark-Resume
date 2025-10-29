@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 /* initially added this shorthand style and theme layer, later we'll add more accordingly */
@@ -26,18 +27,40 @@
   .absolute-center {
     @apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%];
   }
+
+  .absolute-horizontal-center {
+    @apply absolute left-[50%] translate-x-[-50%];
+  }
+
+  .absolute-vertical-center {
+    @apply absolute top-[50%] translate-y-[-50%];
+  }
+
+  .font-urbanist {
+    font-family: "Urbanist", system-ui, sans-serif;
+  }
 }
+
+@layer components {
+  .glass-card { 
+background: rgba(255, 255, 255, 0.11);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+  }
 
 /* Color Themes */
 
 @layer theme {
   :root {
     --primary-text: #fd853a;
-    --primary-bg: #FEB273;
-    --secondary-bg: #F2F4F7;
-    --secondary-text: #98A2B3;
+    --primary-bg: #feb273;
+    --secondary-bg: #f2f4f7;
+    --secondary-text: #98a2b3;
     --primary-black: #171717;
     --secondary-black: #272727;
   }
 }
-
