@@ -3,7 +3,7 @@ import textMockup1 from "../../assets/text-mockup1.svg";
 import textMockup2 from "../../assets/text-mockup2.svg";
 import userBgMockUp from "../../assets/user-bg-mockup.svg";
 import ellipse from "../../assets/Ellipse.svg";
-import userbg from "../../assets/user.svg";
+import userbg from "../../assets/userIMG.png";
 import invertedCap from "../../assets/invertedCap.svg";
 import Ratings from "../Ratings/Ratings";
 import { gsap } from "gsap";
@@ -97,8 +97,8 @@ const Hero = () => {
           {/* hero text  */}
           <div className="w-fit mx-auto relative mt-2">
             <h1 className="text-center text-[4rem] leading-16 font-urbanist font-semibold">
-              I'm <span className="text-(--primary-text)">Jenny</span>, <br />{" "}
-              Product Designer
+              I'm <span className="text-(--primary-text)">Rohan</span>, <br />{" "}
+              Software Developer
             </h1>
             <img
               className="absolute -left-8 -bottom-8 w-[2.8rem]"
@@ -115,7 +115,7 @@ const Hero = () => {
         <div ref={userTag} className="absolute-vertical-center mt-12 ml-20">
           <img src={invertedCap} alt="" />
           <p>
-            Jenny's Exceptional product design <br /> ensure our website's
+            Rohan's Exceptional product design <br /> ensure our website's
             success. <br /> Highly Recommended
           </p>
         </div>
@@ -139,7 +139,7 @@ const Hero = () => {
             src={userBgMockUp}
             alt=""
           />
-          <img ref={heroBg} className="absolute bottom-0 w-188 z-20" src={userbg} alt="" />
+          <img ref={heroBg} className="absolute bottom-0 w-[20rem] z-20" src={userbg} alt="" />
           <div className="glass-card absolute bottom-10 z-30 flex gap-2 p-[5px] rounded-full">
             <button className="bg-(--primary-text) text-white px-3 py-1 rounded-full text-2xl">PortFolio</button>
             <button className="ring-1 ring-(--primary-text) text-white px-3 py-1 rounded-full text-2xl">Hire me</button>
