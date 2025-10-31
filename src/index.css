@@ -41,6 +41,23 @@
   }
 }
 
+/* local font familly  */
+
+@font-face {
+  font-family: lufgaLight;
+  src: url('Fonts/lufga/LufgaLight.ttf');
+}
+
+@font-face {
+  font-family: lufgaRegular;
+  src: url('Fonts/lufga/LufgaRegular.ttf');
+}
+
+@font-face {
+  font-family: lufgaBold;
+  src: url('Fonts/lufga/LufgaBold.ttf');
+}
+
 @layer components {
   .glass-card {
     background: rgba(255, 255, 255, 0.092);
@@ -49,6 +66,10 @@
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
+
+  .marque-card {
+    transform: rotate3d(1, 1, 2, 357.2deg);
+  }
 }
 
 /* Color Themes */
@@ -56,10 +77,24 @@
 @layer theme {
   :root {
     --primary-text: #fd853a;
-    --secondary-bg: #f2f4f7;
+    --secondary-bg: #edf6f9;
     --secondary-text: #98a2b3;
     --primary-black: #171717;
     --secondary-black: #272727;
-    --primary-blue: #1D2939;
+    --primary-blue: #1d2939;
+  }
+}
+
+#movex{
+  animation: moveAnimation 5s linear infinite;
+}
+
+@keyframes moveAnimation{
+  from{
+    transform: translateX(0);
+  }
+
+  to{
+    transform: translateX(-50%);
   }
 }

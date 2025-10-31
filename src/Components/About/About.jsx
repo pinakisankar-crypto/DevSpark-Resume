@@ -57,7 +57,7 @@ const About = () => {
       </div>
 
       <div className="w-[50%]">
-        <h2 className="text-(--primary-blue) text-6xl font-semibold">
+        <h2 className="text-5xl font-semibold font-[lufgaBold]">
           Know <span className="text-(--primary-text)">About Me</span>
         </h2>
         <p className="mt-12">

@@ -4,7 +4,7 @@ import { experiences } from "../../constants/contants";
 const Experience = () => {
   return (
     <section className="xl:px-32 lg:px-18 md:px-12 sm:px-8 px-4 my-18">
-      <h2 className="text-(--primary-blue) text-5xl font-semibold text-center">
+      <h2 className="text-5xl font-semibold font-[lufgaBold]">
         My <span className="text-(--primary-text)">Work Experience</span>
       </h2>
 

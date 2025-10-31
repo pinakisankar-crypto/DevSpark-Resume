@@ -75,7 +75,7 @@ const Projects = () => {
       <article className="absolute top-16 w-full">
         {/* heading */}
         <div className="xl:px-32 lg:px-18 md:px-12 sm:px-8 px-4 flex-between">
-          <h2 className="text-white text-4xl font-semibold">
+          <h2 className="text-5xl font-semibold font-[lufgaBold] text-white">
             My <span className="text-(--primary-text)">Projects</span>
           </h2>
           <p className="text-white">

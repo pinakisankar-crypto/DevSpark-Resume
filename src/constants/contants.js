@@ -53,3 +53,30 @@ export const experiences = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, dignissimos sunt laborum alias dolorem error natus adipisci id illo, facilis",
   },
 ];
+
+export const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+export const expertise = ['UX Design', 'App Design', 'Dashboard', 'Wireframe', 'Software development']
+
+export const skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "Java",
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "ReduX Tookit",
+    "Spring Boot",
+    "Git",
+    "GitHub",
+    "DSA",
+    "OOPs",
+    "Tailwind CSS",
+    "Material UI",
+    "REST API",
+    "Postman",
+  ];
+
