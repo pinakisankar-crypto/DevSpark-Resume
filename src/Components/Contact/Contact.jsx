@@ -18,7 +18,7 @@ const Contact = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: form.current,
-        start: "top 70%",
+        start: "top 55%",
       },
     });
 
