@@ -88,6 +88,7 @@ const Hero = () => {
               Hello!
             </button>
             <img
+            loading="lazy"
               className="absolute w-[1.4rem] -top-4 -right-6"
               src={textMockup1}
               alt=""
@@ -101,6 +102,7 @@ const Hero = () => {
               Software Developer
             </h1>
             <img
+             loading="lazy"
               className="absolute -left-8 -bottom-8 w-[2.8rem]"
               src={textMockup2}
               alt=""
@@ -113,18 +115,18 @@ const Hero = () => {
       <article className="cursor-pointer" id="hero-bg">
         {/* user tag  */}
         <div ref={userTag} className="absolute-vertical-center mt-12 ml-20">
-          <img src={invertedCap} alt="" />
-          <p>
+          <img loading="lazy" src={invertedCap} alt="" />
+          <p className="font-[lufgaBold]">
             Rohan's Exceptional product design <br /> ensure our website's
             success. <br /> Highly Recommended
           </p>
         </div>
 
         {/* user experiece and rating  */}
-        <div ref={userRate} className="right-0 absolute-vertical-center mt-12 mr-20 flex flex-col items-end">
+        <div ref={userRate} className="right-0 absolute-vertical-center mt-12 mr-20 flex flex-col items-end font-urbanist">
           <Ratings rating={5} />
-          <h3 className="text-[3rem] leading-none font-semibold">3 Years</h3>
-          <span className="font-semibold mt-2">Experience</span>
+          <h3 className="text-[3rem] leading-none font-semibold my-2">2 Years</h3>
+          <span className="font-semibold font-[lufgaLight]">Experience</span>
         </div>
 
         {/* user image  */}
@@ -132,14 +134,15 @@ const Hero = () => {
           id="user-image"
           className="absolute w-full bottom-0 flex justify-center"
         >
-          <img className="w-182 z-0" src={ellipse} alt="" />
+          <img loading="lazy" className="w-182 z-0" src={ellipse} alt="" />
           <img
+            loading="lazy"
             ref={userMockup}
             className="absolute bottom-0 w-0"
             src={userBgMockUp}
             alt=""
           />
-          <img ref={heroBg} className="absolute bottom-0 w-[20rem] z-20" src={userbg} alt="" />
+          <img loading="lazy" ref={heroBg} className="absolute bottom-0 w-[20rem] z-20" src={userbg} alt="" />
           <div className="glass-card absolute bottom-10 z-30 flex gap-2 p-[5px] rounded-full">
             <button className="bg-(--primary-text) text-white px-3 py-1 rounded-full text-2xl">PortFolio</button>
             <button className="ring-1 ring-(--primary-text) text-white px-3 py-1 rounded-full text-2xl">Hire me</button>

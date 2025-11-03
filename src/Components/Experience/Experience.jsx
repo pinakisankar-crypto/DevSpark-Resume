@@ -13,8 +13,8 @@ const Experience = () => {
         {/* work experience card  */}
         {experiences.map((exp, id) => (
           <div key={id} className="flex-between items-start my-10">
-            <div>
-              <h4 className="text-3xl font-semibold capitalize">
+            <div className="font-[lufgaRegular]">
+              <h4 className="text-[1.7rem] font-semibold capitalize">
                 {exp.company}, {exp.location}
               </h4>
               <p className="mt-3 text-(--secondary-text)">
@@ -22,8 +22,8 @@ const Experience = () => {
               </p>
             </div>
 
-            <div className="w-[30%]">
-              <h4 className="text-3xl font-semibold capitalize">
+            <div className="w-[30%] font-[lufgaRegular]">
+              <h4 className="text-[1.7rem] font-semibold capitalize">
                 {exp.position}
               </h4>
               <p className="mt-3 text-(--secondary-text)">{exp.description}</p>
@@ -32,7 +32,7 @@ const Experience = () => {
         ))}
 
 
-        {/* timeline section  */}
+        {/* timeline section (This line height i've set manually otherwise if we use react vertical timeline library that will be better)  */}
         <div className="absolute-horizontal-center h-[85%] z-20 top-0 border-2 border-dashed border-(--primary-blue)">
           <span
             id="start"

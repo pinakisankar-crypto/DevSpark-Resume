@@ -65,10 +65,10 @@ const Contact = () => {
         </p>
         <input
           type="text"
-          className="outline-none w-full mx-3 px-2"
+          className="outline-none w-full mx-3 px-2 font-[lufgaRegular]"
           placeholder="Enter Email Address"
         />
-        <button className="bg-[#FB6514] px-5 rounded-full text-white cursor-pointer">
+        <button className="bg-[#FB6514] px-5 rounded-full text-white cursor-pointer font-[lufgaRegular]">
           Send
         </button>
       </form>
@@ -82,7 +82,7 @@ const Contact = () => {
                 <p className="font-[lufgaRegular] text-5xl capitalize whitespace-nowrap">
                   {exp}
                 </p>
-                <img src={star} alt="" className="w-10 h-10 ml-3 mr-12" />
+                <img loading="lazy" src={star} alt="" className="w-10 h-10 ml-3 mr-12" />
               </div>
             ))}
 
@@ -92,7 +92,7 @@ const Contact = () => {
                 <p className="font-[lufgaRegular] text-5xl capitalize whitespace-nowrap">
                   {exp}
                 </p>
-                <img src={star} alt="" className="w-10 h-10 ml-3 mr-12" />
+                <img loading="lazy" src={star} alt="" className="w-10 h-10 ml-3 mr-12" />
               </div>
             ))}
           </div>
@@ -105,7 +105,7 @@ const Contact = () => {
         <h3 className="font-[lufgaBold] text-3xl text-(--primary-blue)">
           Want To Reach <br /> out to me ?
         </h3>
-        <p className="text-(--secondary-text) font-semibold font-[lufgaLight] my-6">
+        <p className="text-(--secondary-text) font-[lufgaSemibold] my-6">
           To request a quote or want to meet up for coffee, contact me directly{" "}
           <br />
           or fill out the form and I will get back to you promptly.
@@ -113,9 +113,9 @@ const Contact = () => {
 
         <div className="flex-between items-start gap-24" >
           {/* form section  */}
-          <form className="w-[50%] font-[lufgaRegular]">
+          <form className="w-[50%] font-[lufgaSemibold]">
             <fieldset className="border-2 border-(--secondary-text) rounded-lg mt-3 py-2">
-              <legend className="px-2 mx-2 font-semibold">Name</legend>
+              <legend className="px-2 mx-2 ">Name</legend>
               <input
                 className="outline-none ml-4 w-full"
                 type="text"
@@ -124,16 +124,16 @@ const Contact = () => {
             </fieldset>
 
             <fieldset className="border-2 border-(--secondary-text) rounded-lg mt-3 py-2">
-              <legend className="px-2 mx-2 font-semibold">Email</legend>
+              <legend className="px-2 mx-2 ">Email</legend>
               <input
                 className="outline-none ml-4 w-full"
                 type="email"
-                placeholder="Let me know ur mail"
+                placeholder="Let me know ur email id"
               />
             </fieldset>
 
             <fieldset className="border-2 border-(--secondary-text) rounded-lg  mt-3 py-2">
-              <legend className="px-2 mx-2 font-semibold">Your Message</legend>
+              <legend className="px-2 mx-2">Your Message</legend>
               <textarea
                 className="outline-none ml-4 w-full h-32"
                 placeholder="What's on your mind?"
@@ -146,7 +146,7 @@ const Contact = () => {
           </form>
 
           <div className="w-[50%]" >
-            <img className="min-w-[20rem] w-[26vw] mx-auto" src={mailImg} alt="" />
+            <img loading="lazy" className="min-w-[20rem] w-[26vw] mx-auto" src={mailImg} alt="" />
           </div>
         </div>
       </div>

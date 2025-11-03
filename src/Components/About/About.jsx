@@ -49,18 +49,19 @@ const About = () => {
       >
         <img
           className="absolute-horizontal-center bottom-0 w-full` z-10"
+          loading="lazy"
           src={aboutBG}
           alt=""
         />
 
-        <img ref={rings} className="absolute w-full scale-0 -top-28" src={aboutMockup} alt="" />
+        <img loading="lazy" ref={rings} className="absolute w-full scale-0 -top-28" src={aboutMockup} alt="" />
       </div>
 
       <div className="w-[50%]">
         <h2 className="text-5xl font-semibold font-[lufgaBold]">
           Know <span className="text-(--primary-text)">About Me</span>
         </h2>
-        <p className="mt-12">
+        <p className="mt-12 font-[lufgaRegular] text-lg">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sed
           aspernatur aut fuga eveniet minima ut ab doloribus nemo sequi
           quibusdam quis accusantium dolores, debitis a, reprehenderit
@@ -72,19 +73,19 @@ const About = () => {
 
         <div className="flex-between mt-16">
           <div>
-            <h5 className="text-4xl font-semibold text-(--primary-blue)">
+            <h5 className="text-4xl font-urbanist font-semibold text-(--primary-blue)">
               450+
             </h5>
-            <p className="mt-2 font-semibold text-(--secondary-text)">
+            <p className="mt-2 font-[lufgaRegular] text-(--secondary-text)">
               Projects Completed
             </p>
           </div>
 
           <div>
-            <h5 className="text-4xl font-semibold text-(--primary-blue)">
+            <h5 className="text-4xl font-urbanist font-semibold text-(--primary-blue)">
               20+
             </h5>
-            <p className="mt-2 font-semibold text-(--secondary-text)">
+            <p className="mt-2 font-[lufgaRegular] text-(--secondary-text)">
               Happy clients
             </p>
           </div>

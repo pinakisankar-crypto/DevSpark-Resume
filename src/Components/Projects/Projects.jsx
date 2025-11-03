@@ -69,7 +69,7 @@ const Projects = () => {
   return (
     <section id="projects" className="relative">
       <div className="w-full h-160 rounded-t-[3rem] rounded-b-[3rem] overflow-hidden">
-        <img className="w-full h-full object-cover" src={projectBG} alt="" />
+        <img loading="lazy" className="w-full h-full object-cover" src={projectBG} alt="" />
       </div>
 
       <article className="absolute top-16 w-full">
@@ -78,7 +78,7 @@ const Projects = () => {
           <h2 className="text-5xl font-semibold font-[lufgaBold] text-white">
             My <span className="text-(--primary-text)">Projects</span>
           </h2>
-          <p className="text-white">
+          <p className="text-white font-[lufgaRegular]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis <br />{" "}
             lacus nunc, posuere in justo vulputate, bibendum sodales{" "}
           </p>
@@ -96,11 +96,12 @@ const Projects = () => {
               className="w-full h-fit glass-card rounded-4xl overflow-hidden relative"
             >
               <div className="py-4 px-6">
-                <p className="text-white text-xl">{project.projectName}</p>
+                <p className="text-white text-xl font-[lufgaRegular]">{project.projectName}</p>
               </div>
 
               <div className="relative mt-8 h-78 overflow-hidden">
                 <img
+                loading="lazy"
                   ref={(el) => (projectImage.current[i] = el)}
                   className="w-full h-full object-cover"
                   src={project.projectImage}

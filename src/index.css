@@ -54,6 +54,11 @@
 }
 
 @font-face {
+  font-family: lufgaSemibold;
+  src: url('Fonts/lufga/LufgaSemiBold.ttf');
+}
+
+@font-face {
   font-family: lufgaBold;
   src: url('Fonts/lufga/LufgaBold.ttf');
 }

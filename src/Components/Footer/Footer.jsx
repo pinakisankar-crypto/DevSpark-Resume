@@ -69,10 +69,10 @@ const Footer = () => {
             ref={brandHolder}
             className="flex items-center gap-2 cursor-pointer w-40 text-white"
           >
-            <h2 className="font-bold text-xl p-1 rounded-full bg-(--primary-text)">
+            <h2 className="font-bold text-xl p-1 rounded-full bg-(--primary-text) font-[lufgaBold]">
               DS
             </h2>
-            <h2 ref={brandText} className="text-xl font-bold">
+            <h2 ref={brandText} className="text-xl font-[lufgaBold]">
               DEVSPARK
             </h2>
             <div ref={creditText} className="relative hidden h-8">
@@ -90,7 +90,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <p className="text-gray-300 my-5">
+          <p className="text-gray-300 my-5 font-[lufgaRegular]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue
             interdum ligula a dignissim. Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Sed lobortis orci elementum egestas lobortis.
@@ -102,12 +102,12 @@ const Footer = () => {
               Navigation
             </p>
             {leftNav.map((list, id) => (
-              <li key={id} className="text-gray-300 capitalize my-1">
+              <li key={id} className="text-gray-300 capitalize my-1 font-[lufgaLight] cursor-pointer hover:text-white">
                 {list}
               </li>
             ))}
             {rightNav.map((list, id) => (
-              <li key={id} className="text-gray-300 capitalize my-2">
+              <li key={id} className="text-gray-300 capitalize my-2 font-[lufgaLight] cursor-pointer hover:text-white">
                 {list}
               </li>
             ))}
@@ -117,9 +117,9 @@ const Footer = () => {
             <p className="text-(--primary-text) font-[lufgaBold] mb-4 text-xl">
               Contact
             </p>
-            <li className="text-gray-300 capitalize my-2">+91 232323232</li>
-            <li className="text-gray-300 capitalize my-2">sankar@xyz.com</li>
-            <li className="text-gray-300 capitalize my-2">
+            <li className="text-gray-300 capitalize my-2 font-[lufgaLight] cursor-pointer hover:text-white">+91 232323232</li>
+            <li className="text-gray-300 capitalize my-2 font-[lufgaLight] cursor-pointer hover:text-white">sankar@xyz.com</li>
+            <li className="text-gray-300 capitalize my-2 font-[lufgaLight] cursor-pointer hover:text-white">
               Infocity rd, Bhubaneswar, India
             </li>
           </ul>
@@ -128,7 +128,7 @@ const Footer = () => {
             <p className="text-(--primary-text) font-[lufgaBold] mb-4 text-xl">
               Subscribe to work
             </p>
-            <form className="bg-white w-[18rem] rounded-lg flex overflow-hidden">
+            <form className="bg-white w-[18rem] rounded-lg flex overflow-hidden font-[lufgaRegular]">
               <input
                 className="px-2 py-3 w-full outline-none"
                 type="email"

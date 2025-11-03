@@ -49,36 +49,42 @@ const GitStats = () => {
           {/* user github image  */}
           <div className="border border-gray-400 w-64 h-64 rounded-full">
             <img
+            loading="lazy"
               className="rounded-full w-full h-full object-cover"
               src={profile}
               alt=""
             />
           </div>
           {/* user github name */}
-          <h4 className="text-xl text-white font-semibold mt-8">{userName}</h4>
+          <h4 className="text-xl text-white font-semibold mt-8 font-[lufgaRegular]">{userName}</h4>
           {/* user github username  */}
           <p className="my-2 text-(--secondary-text)">{userFullName}</p>
 
           {/* <p className="my-2 text-(--secondary-text)">{bio}</p> */}
-          <p className="my-2 text-(--secondary-text)">{company}</p>
-          <p className="my-2 text-(--secondary-text)">{location}</p>
-          <button className="glass-card mt-8 w-64 py-2 rounded-md text-white cursor-pointer hover:bg-blue-600 transition duration-200 ease-in-out">
+          <p className="my-2 text-(--secondary-text) font-[lufgaLight] ">{company}</p>
+          <p className="my-2 text-(--secondary-text) font-[lufgaLight] ">{location}</p>
+          <button className="glass-card mt-8 w-64 py-2 rounded-md text-white cursor-pointer hover:bg-blue-600 transition duration-200 ease-in-out font-[lufgaRegular]">
             Follow
           </button>
         </div>
 
         {/* github heat map and repository stats  */}
         <div className="w-[69%]">
+
+          {/* user bio  */}
+
+          <p className="text-white text-center font-[lufgaRegular] text-[1.5vw] mb-8">{bio}</p>
+
           {/* repository stats  */}
           <div className="flex-between gap-8">
             {/* number of repositories */}
             <div className="relative glass-card w-[40%] h-42 mb-8 rounded-md px-4 py-2">
-              <p className="text-white text-right capitalize" >no. of repositories</p>
-              <h4 className="absolute-center text-white text-6xl font-semibold mt-2 text-center">{numOfRepo}</h4>
+              <p className="text-white text-right capitalize font-[lufgaRegular]" >no. of repositories</p>
+              <h4 className="absolute-center text-white text-5xl font-[lufgaBold] font-semibold mt-2 text-center">{numOfRepo}</h4>
             </div>
             <div className="relative glass-card w-[60%] h-42 mb-8 rounded-md px-4 py-2">
-              <p className="text-white text-right capitalize">date of joining</p>
-              <h4 className="absolute-center text-white text-6xl font-semibold mt-2 text-center whitespace-nowrap">{dateOfJoin}</h4>
+              <p className="text-white text-right capitalize font-[lufgaRegular]">date of joining</p>
+              <h4 className="absolute-center text-white text-5xl font-semibold mt-2 text-center whitespace-nowrap font-[lufgaBold]">{dateOfJoin}</h4>
             </div>
           </div>
           <div className="text-white glass-card px-1 py-2 rounded-md">
@@ -87,6 +93,7 @@ const GitStats = () => {
         </div>
       </article>
       <img
+      loading="lazy"
         src={background}
         alt=""
         className="absolute top-0 left-0 w-full h-full object-cover -z-10"

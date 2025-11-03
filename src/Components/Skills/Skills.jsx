@@ -11,14 +11,15 @@ const Skills = () => {
       </h2>
 
       <div className="mt-12 grid md:grid-rows-4 lg:grid-rows-3 sm:grid-rows-6 grid-flow-col md:p-3 lg:p-3 sm:p-0 p-5 gap-5">
-        {skills.map((skill, index) => (
+        {skills.map((skill, id) => (
           <div
-            key={index}
-            className="bg-white w-full px-8 py-2 flex items-center justify-center rounded-md border drop-shadow-lg border-transparent hover:border-green-800 cursor-pointer hover:font-semibold transition-all duration-200"
+            key={id}
+            className="bg-white w-full px-3 py-2 flex items-center gap-2 rounded-md drop-shadow-lg hover:border-green-800 cursor-pointer hover:font-semibold transition-all duration-200"
           >
-            <h2 className="lg:text-lg md:text-base text-sm text-center">
-              {skill}
-            </h2>
+            <img loading="lazy" className="w-[1.7rem]" src={skill.image} alt="" />
+            <p className="font-[lufgaLight] whitespace-nowrap">
+              {skill.name}
+            </p>
           </div>
         ))}
       </div>
