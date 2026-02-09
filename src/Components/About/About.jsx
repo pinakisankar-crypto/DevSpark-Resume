@@ -62,7 +62,7 @@ const About = () => {
           Know <span className="text-(--primary-text)">About Me</span>
         </h2>
         <p className="mt-12 font-[lufgaRegular] text-lg">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sed
+          Lorem ipsum sit amet consectetur adipisicing elit. Id sed
           aspernatur aut fuga eveniet minima ut ab doloribus nemo sequi
           quibusdam quis accusantium dolores, debitis a, reprehenderit
           reiciendis dicta nostrum! Consequuntur impedit explicabo suscipit
